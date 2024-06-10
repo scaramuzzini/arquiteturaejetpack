@@ -21,13 +21,10 @@ class MainActivity : AppCompatActivity() {
             binding.textViewCounter.text = "Contador: $it"
         }
 
-
         binding.buttonAdd.setOnClickListener {
             Toast.makeText(this@MainActivity, "Add", Toast.LENGTH_SHORT).show()
             Log.d("ocean", "Clicou no botao")
             viewModel.incrementCounter()
         }
-
-
     }
 }
